@@ -5,46 +5,50 @@
     <meta name="viewport" content="width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register | Barter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section>
         <div>
-            <header>
-                <div>Register</div>
-            </header>
-            <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online</p>
-            <form action="http" id="forms">
-                <input type="text" placeholder="First Name"class="inputs" size="100">
-                <input type="text" placeholder="Last Name"class="inputs" size="100">
-                <input type="email" name="" id="" placeholder="Email address"class="inputs" size="100">
-                <input type="password" placeholder="Password"class="inputs" size="100">
-                <div id="dropdown">
-                    <select name="numbers" id="" class="item">
-                        <option value="+234">+234</option>
-                        <option value="+233">+233</option>
-                        <option value="+444">+444</option>
-                    </select><input type="tel" placeholder="xxxxxxx"class="item" size="87">
-                </div><!--dropdown-->
-                <button type="submit" style="color: white">
-                    <div>REGISTER ACCOUNT</div>
-                    <div class="arrow">&LongRightArrow;</div>
-                </button>
-            </form>
+            <div class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <a class="nav-item nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-expanded="true">Register</a>
+                <a class="nav-item nav-link  active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-expanded="false">Login</a>
+            </div> <!--nav-pills-->
 
-            <header>
-                <div>Login</div>
-            </header>
             <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online</p>
-            <form action="http" id="forms">
-                <input type="text" placeholder="Email address"class="inputs" size="100">
-                <input type="password" placeholder="Password"class="inputs" size="100">
-                <button type="submit" style="color: white">
-                    <div>LOG INTO ACCOUNT</div>
-                    <div class="arrow">&LongRightArrow;</div>
-                </button>
-                <a href="http://">Login with Phone Number?</a>
-            </form>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                    <form action="http" id="forms">
+                        <input type="text" placeholder="First Name"class="inputs" size="100">
+                        <input type="text" placeholder="Last Name"class="inputs" size="100">
+                        <input type="email" name="" id="" placeholder="Email address"class="inputs" size="100">
+                        <input type="password" placeholder="Password"class="inputs" size="100">
+                        <div id="dropdown">
+                            <select name="numbers" id="" class="item">
+                                <option value="+234">+234</option>
+                                <option value="+233">+233</option>
+                                <option value="+444">+444</option>
+                            </select><input type="tel" placeholder="xxxxxxx"class="item" size="87">
+                        </div><!--dropdown-->
+                        <button type="submit" style="color: white">
+                            <div>REGISTER ACCOUNT</div>
+                            <div class="arrow">&LongRightArrow;</div>
+                        </button>
+                    </form>
+                </div> <!-- pills-register -->
+                <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                    <form action="http" id="forms">
+                        <input type="text" placeholder="Email address"class="inputs" size="100">
+                        <input type="password" placeholder="Password"class="inputs" size="100">
+                        <button type="submit" style="color: white">
+                            <div>LOG INTO ACCOUNT</div>
+                            <div class="arrow">&LongRightArrow;</div>
+                        </button>
+                        <a href="http://">Login with Phone Number?</a>
+                    </form>
+                </div> <!-- pills-login -->
+            </div> <!-- tab-content -->
         </div>
 
         <div>
