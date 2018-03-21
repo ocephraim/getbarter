@@ -1,0 +1,73 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header > div {
+    border-bottom: 1px solid rgb(48, 48, 136);
+    width: 30%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(73,80,165) 
+}
+p {
+    margin-bottom: 40px;
+    color: rgb(138, 136, 136);
+}
+#forms > input.inputs {
+    display: block;
+    padding: 20px;
+    padding-left: 0px;
+    border:none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    text-align: left;
+    transition: all 0.4s ease-in;
+}
+#forms > input.inputs:focus {
+    outline-width: 0;
+    border-bottom: 1px solid blue;
+}
+#dropdown {
+    text-align: left;
+}
+#dropdown > .item {
+    padding: 20px;
+    padding-left: 0;
+    border:none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    transition: all 0.4s ease-in;
+}
+#dropdown > .item:focus {
+    outline-width: 0;
+    border-bottom: 1px solid blue;
+}
+#dropdown > select.item {
+    padding: 19px;
+    padding-left: 0; 
+}
+button {
+    float: left;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgb(165,173,241);
+    border-radius: 40px;
+    font-size: 12px;
+    transition: all 0.2s ease-in;
+}
+button > div {
+    display: inline-block;
+}
+button > div.arrow {
+    margin-left: 15px;
+    transition-delay: 40ms;
+    transition: all 0.3s ease-in;
+}
+button:hover {
+    background: rgba(59,89,152, 0.7);
+}
+button:hover > div.arrow {
+    transform: translateX(6px);
+}
