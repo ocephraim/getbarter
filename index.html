@@ -12,59 +12,61 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <section>
-        <div>
-            <div class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <a class="nav-item nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-expanded="true">Register</a>
-                <a class="nav-item nav-link  active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-expanded="false">Login</a>
-            </div> <!--nav-pills-->
+    <section class="container">
+        <div class="row">
+            <div class="col-7">
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist" style="background-color: none;">
+                    <a class="nav-item nav-link  active" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="register" aria-expanded="true">Register</a>
+                    <a class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="login" aria-expanded="false">Login</a>
+                </div> <!--nav-pills-->
 
-            <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online</p>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
-                    <form action="http" id="forms">
-                        <input type="text" placeholder="First Name"class="inputs" size="100">
-                        <input type="text" placeholder="Last Name"class="inputs" size="100">
-                        <input type="email" name="" id="" placeholder="Email address"class="inputs" size="100">
-                        <input type="password" placeholder="Password"class="inputs" size="100">
-                        <div id="dropdown">
-                            <select name="numbers" id="" class="item">
-                                <option value="+234">+234</option>
-                                <option value="+233">+233</option>
-                                <option value="+444">+444</option>
-                            </select><input type="tel" placeholder="xxxxxxx"class="item" size="87">
-                        </div><!--dropdown-->
-                        <button type="submit" style="color: white">
-                            <div>REGISTER ACCOUNT</div>
-                            <div class="arrow">&LongRightArrow;</div>
-                        </button>
-                    </form>
-                </div> <!-- pills-register -->
-                <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
-                    <form action="http" id="forms">
-                        <input type="text" placeholder="Email address"class="inputs" size="100">
-                        <input type="password" placeholder="Password"class="inputs" size="100">
-                        <button type="submit" style="color: white">
-                            <div>LOG INTO ACCOUNT</div>
-                            <div class="arrow">&LongRightArrow;</div>
-                        </button>
-                        <a href="http://">Login with Phone Number?</a>
-                    </form>
-                </div> <!-- pills-login -->
-            </div> <!-- tab-content -->
-        </div>
+                <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online</p>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                        <form action="http" id="forms">
+                            <input type="text" placeholder="First Name"class="form-control">
+                            <input type="text" placeholder="Last Name"class="form-control" size="100">
+                            <input type="email" name="" id="" placeholder="Email address"class="form-control" size="100">
+                            <input type="password" placeholder="Password"class="form-control" size="100">
+                            <div id="dropdown">
+                                <select name="numbers" id="" class="item">
+                                    <option value="+234">+234</option>
+                                    <option value="+233">+233</option>
+                                    <option value="+444">+444</option>
+                                </select><input type="tel" placeholder="xxxxxxx"class="form-control">
+                            </div><!--dropdown-->
+                            <button type="submit" style="color: white">
+                                <div>REGISTER ACCOUNT</div>
+                                <div class="arrow">&LongRightArrow;</div>
+                            </button>
+                        </form>
+                    </div> <!-- nav-register -->
+                    <div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                        <form action="http" id="forms">
+                            <input type="text" placeholder="Email address"class="form-control" size="100">
+                            <input type="password" placeholder="Password"class="form-control" size="100">
+                            <button type="submit" style="color: white">
+                                <div>LOG INTO ACCOUNT</div>
+                                <div class="arrow">&LongRightArrow;</div>
+                            </button>
+                            <a href="http://">Login with Phone Number?</a>
+                        </form>
+                    </div> <!-- nav-login -->
+                </div> <!-- tab-content -->
+            </div>
 
-        <div>
-            <p>You can sign in using your accounts on these sites:</p>
-            <div>
-                <div>FACEBOOK</div>
-                <div class="arrow">&LongRightArrow;</div>
-            </div>
-            <div>
-                <div>GOOGLE</div>
-                <div class="arrow">&LongRightArrow;</div>
-            </div>
-        </div>
+            <div class="social col-5">
+                <p>You can sign in using your accounts on these sites:</p>
+                <div class="facebook">
+                    <div>FACEBOOK</div>
+                    <div class="arrow">&LongRightArrow;</div>
+                </div>
+                <div class="google">
+                    <div>GOOGLE</div>
+                    <div class="arrow">&LongRightArrow;</div>
+                </div>
+            </div> <!--social-->
+        </div> <!--row-->
     </section>
 </body>
 </html>
