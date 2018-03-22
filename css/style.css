@@ -32,6 +32,7 @@ p {
 }
 #forms > input[class=form-control] {
     display: block;
+    border-radius: 0;
     padding: 20px;
     padding-left: 0px;
     border:none;
@@ -40,7 +41,7 @@ p {
     transition: all 0.4s ease-in;
 }
 #forms > input[class=form-control]:focus {
-    outline-width: 0;
+    box-shadow: none;
     border-bottom: 1px solid blue;
 }
 #dropdown {
