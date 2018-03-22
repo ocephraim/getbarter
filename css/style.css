@@ -67,6 +67,7 @@ p {
     padding-left: 0; 
 }
 button {
+    width: 200px;
     padding: 20px;
     margin-top: 25px;
     background: rgb(165,173,241);
@@ -74,7 +75,7 @@ button {
     font-size: 12px;
     transition: all 0.2s ease-in;
     display: block;
-    box-shadow: none;
+    border-style: none;
 }
 button > div {
     display: inline-block;
@@ -93,7 +94,8 @@ button:hover > div.arrow {
 .forgot {
     font-size: 12px;
     float: right;
-    opacity: .5;
+    opacity: .7;
+    color: rgb(139,152,234);
 }
 .forgot:hover, .alternate:hover {
     text-decoration: none;
@@ -104,7 +106,8 @@ button:hover > div.arrow {
 .alternate {
     display: block;
     margin: 15px 0 0 15px;
-    opacity: .5;
+    opacity: .7;
+    color: rgb(139,152,234);
 }
 .social {
     margin-top: 120px;
