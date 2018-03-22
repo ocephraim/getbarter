@@ -1,13 +1,18 @@
 body {
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 90px;
+}
+.image {
+    height: 30px;
+    margin-top: 60px; 
 }
 .nav a{
     border-bottom: 1px solid rgb(48, 48, 136);
     width: 30%;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 20px;
     text-align: center;
     margin-bottom: 30px;
@@ -18,11 +23,10 @@ body {
     border: none;
 }
 .nav-tabs .nav-link {
-    border: none;
-    margin-right: 20px; 
+    border: none; 
     border-bottom: 1px solid rgba(168, 165, 165, 0.2);
 }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link.active {
     border: none;
     border-bottom: 1px solid rgb(48, 48, 136);
 }
@@ -63,13 +67,14 @@ p {
     padding-left: 0; 
 }
 button {
-    float: left;
     padding: 20px;
     margin-top: 25px;
     background: rgb(165,173,241);
     border-radius: 40px;
     font-size: 12px;
     transition: all 0.2s ease-in;
+    display: block;
+    box-shadow: none;
 }
 button > div {
     display: inline-block;
@@ -85,15 +90,34 @@ button:hover {
 button:hover > div.arrow {
     transform: translateX(6px);
 }
+.forgot {
+    font-size: 12px;
+    float: right;
+    opacity: .5;
+}
+.forgot:hover, .alternate:hover {
+    text-decoration: none;
+    color: gray;
+    opacity: .7;
+    transition: all .2s ease-in;
+}
+.alternate {
+    display: block;
+    margin: 15px 0 0 15px;
+    opacity: .5;
+}
 .social {
     margin-top: 115px;
+}
+.facebook > div.arrow, .google > div.arrow {
+    float: right;
+    margin-right: 40px; 
 }
 .facebook > div, .google > div {
     display: inline-block;
     padding: 15px 0 15px 30px;
     color: white;
     font-size: 16px;
-    margin-right: 50px;
 }
 .facebook {
     margin-bottom: 30px;
@@ -101,12 +125,14 @@ button:hover > div.arrow {
     border-radius: 50px;
     transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
+    max-width: 260px;
 }
 .google {
     background-color: rgb(221,75,57);
     border-radius: 50px;
     transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
+    max-width: 260px;
 }
 .facebook:hover, .google:hover {
     box-shadow: 0 15px 5px -7px rgba(0, 0, 0, .11);

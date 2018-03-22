@@ -13,11 +13,12 @@
 </head>
 <body>
     <section class="container">
+        <img class="image" src="getbarter-logo.png" alt="">
         <div class="row">
             <div class="col-12 col-md-7">
-                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist" style="background-color: none;">
-                    <a class="nav-item nav-link  active" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="register" aria-expanded="true">Register</a>
-                    <a class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="login" aria-expanded="false">Login</a>
+                <div class="row nav nav-tabs mb-3" id="nav-tab" role="tablist" style="background-color: none;">
+                    <a class="col-5 nav-item nav-link  active" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="register" aria-expanded="true">Register</a>
+                    <a class="col-5 offset-1 nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="login" aria-expanded="false">Login</a>
                 </div> <!--nav-pills-->
 
                 <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online</p>
@@ -28,14 +29,15 @@
                             <input type="text" placeholder="Last Name"class="form-control" size="100">
                             <input type="email" name="" id="" placeholder="Email address"class="form-control" size="100">
                             <input type="password" placeholder="Password"class="form-control" size="100">
-                            <div id="dropdown">
-                                <select name="numbers" id="" class="item">
+                            <!-- <div id="dropdown"> -->
+                                <!-- <select name="numbers" id="" class="item">
                                     <option value="+234">+234</option>
                                     <option value="+233">+233</option>
                                     <option value="+444">+444</option>
-                                </select><input type="tel" placeholder="xxxxxxx"class="form-control">
-                            </div><!--dropdown-->
-                            <button type="submit" style="color: white">
+                                </select> -->
+                            <!-- </div>dropdown -->
+                            <input type="tel" placeholder="xxxxxxx" class="form-control">
+                            <button type="button" style="color: white">
                                 <div>REGISTER ACCOUNT</div>
                                 <div class="arrow">&LongRightArrow;</div>
                             </button>
@@ -45,11 +47,12 @@
                         <form action="http" id="forms">
                             <input type="text" placeholder="Email address"class="form-control" size="100">
                             <input type="password" placeholder="Password"class="form-control" size="100">
-                            <button type="submit" style="color: white">
+                            <a href="" class="forgot">Forgot Password?</a>
+                            <button type="button" style="color: white">
                                 <div>LOG INTO ACCOUNT</div>
                                 <div class="arrow">&LongRightArrow;</div>
                             </button>
-                            <a href="http://">Login with Phone Number?</a>
+                            <a href="http://" class="alternate">Login with Phone Number?</a>
                         </form>
                     </div> <!-- nav-login -->
                 </div> <!-- tab-content -->
