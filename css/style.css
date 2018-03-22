@@ -5,6 +5,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 90px;
 }
+@media (max-width: 776) {
+    body {
+        padding-bottom: 0px;
+    }
+}
 .image {
     height: 30px;
     margin-top: 60px; 
@@ -44,6 +49,18 @@ p {
     text-align: left;
     transition: all 0.4s ease-in;
 }
+#phone {
+    border-radius: 0;
+    padding: 20px;
+    padding-left: 50px;
+    border:none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    transition: all 0.4s ease-in;
+}
+#phone:focus {
+    box-shadow: none;
+    border-bottom: 1px solid blue;
+}
 #forms > input[class=form-control]:focus {
     box-shadow: none;
     border-bottom: 1px solid blue;
@@ -70,7 +87,8 @@ button {
     width: 200px;
     padding: 20px;
     margin-top: 25px;
-    background: rgb(165,173,241);
+    background-color: rgb(59,89,152);
+    opacity: .4;
     border-radius: 40px;
     font-size: 12px;
     transition: all 0.2s ease-in;
@@ -86,7 +104,7 @@ button > div.arrow {
     transition: all 0.3s ease-in;
 }
 button:hover {
-    background: rgba(59,89,152, 0.7);
+    opacity: .7;
 }
 button:hover > div.arrow {
     transform: translateX(6px);

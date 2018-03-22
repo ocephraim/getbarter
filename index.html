@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register | Barter</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/intl-tel-input-master/build/css/intlTelInput.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -36,7 +37,7 @@
                                     <option value="+444">+444</option>
                                 </select> -->
                             <!-- </div>dropdown -->
-                            <input type="tel" placeholder="xxxxxxx" class="form-control">
+                            <input type="tel" id="phone" class="form-control" placeholder="076646848333" size="100%">
                             <button type="button" style="color: white">
                                 <div>REGISTER ACCOUNT</div>
                                 <div class="arrow">&LongRightArrow;</div>
@@ -71,5 +72,32 @@
             </div> <!--social-->
         </div> <!--row-->
     </section>
+  <!-- Load jQuery from CDN so can run demo immediately -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="css/intl-tel-input-master/build/js/intlTelInput.js"></script>
+  <script>
+    $("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "css/intl-tel-input-master/build/js/utils.js"
+    });
+  </script>
 </body>
 </html>
